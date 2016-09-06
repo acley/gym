@@ -23,10 +23,12 @@
       <joint axis="0 0 1" name="rot" pos="0 0 0" type="hinge"/>
       <body name="mid" pos="0.5 0 0">
         <geom density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
-        <joint axis="0 0 1" limited="true" name="rot2" pos="0 0 0" range="-100 100" type="hinge"/>
+        <!-- <joint axis="0 0 1" limited="true" name="rot2" pos="0 0 0" range="-100 100" type="hinge"/> -->
+        <joint axis="0 0 1" name="rot2" pos="0 0 0" type="hinge"/>
         <body name="back" pos="-1 0 0">
           <geom density="1000" fromto="0 0 0 -1 0 0" size="0.1" type="capsule"/>
-          <joint axis="0 0 1" limited="true" name="rot3" pos="0 0 0" range="-100 100" type="hinge"/>
+          <!-- <joint axis="0 0 1" limited="true" name="rot3" pos="0 0 0" range="-100 100" type="hinge"/> -->
+          <joint axis="0 0 1" name="rot3" pos="0 0 0" type="hinge"/>
         </body>
       </body>
     </body>
